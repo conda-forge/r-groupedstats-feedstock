@@ -1,4 +1,4 @@
-{% set version = "0.0.5" %}
+{% set version = "0.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/groupedstats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/groupedstats/groupedstats_{{ version }}.tar.gz
-  sha256: b977ad5b17aacfb16201a275f064f7e6cd3917a9edf79aa8557bc1ea59bf7914
+  sha256: 0493096166bcd4964e4bd1b0d0e5b377a8f8a89b8e5de1a06c646a38d605fe20
 
 build:
   noarch: generic
