@@ -1,11 +1,7 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-groupedstats
 ====================
 
-Home: https://indrajeetpatil.github.io/groupedstats/, https://github.com/IndrajeetPatil/groupedstats
+Home: https://indrajeetpatil.github.io/groupedstats/, https://github.com/IndrajeetPatil/groupedstats/
 
 Package license: GPL-3
 
@@ -18,8 +14,17 @@ Summary: Collection of functions to run statistical tests across all levels of m
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-groupedstats-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-groupedstats-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2296&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-groupedstats-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -114,10 +119,5 @@ Feedstock Maintainers
 =====================
 
 * [@apcamargo](https://github.com/apcamargo/)
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
-* [@daler](https://github.com/daler/)
-* [@dbast](https://github.com/dbast/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 
