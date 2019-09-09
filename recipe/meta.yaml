@@ -1,4 +1,4 @@
-{% set version = '0.0.7' %}
+{% set version = '0.0.9' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/groupedstats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/groupedstats/groupedstats_{{ version }}.tar.gz
-  sha256: 0493096166bcd4964e4bd1b0d0e5b377a8f8a89b8e5de1a06c646a38d605fe20
+  sha256: 41487f81081799dda7328dcf6cb0d9cca6e0b1dc327ca440dd41cc7c8bf84d74
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,35 +25,35 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-broomextra >=0.0.3
+    - r-broomextra >=0.0.5
     - r-crayon >=1.3.4
-    - r-dplyr >=0.8.1
+    - r-dplyr >=0.8.3
     - r-glue >=1.3.1
     - r-lme4 >=1.1_21
     - r-magrittr >=1.5
     - r-purrr >=0.3.2
-    - r-rlang >=0.3.4
-    - r-robust >=0.4_18
+    - r-rlang >=0.4.0
+    - r-robust >=0.4_18.1
     - r-rstudioapi >=0.9.0
     - r-sjstats >=0.17.5
-    - r-skimr >=1.0.6
-    - r-tibble >=2.1.2
+    - r-skimr >=1.0.7
+    - r-tibble >=2.1.3
     - r-tidyr >=0.8.3
   run:
     - r-base
-    - r-broomextra >=0.0.3
+    - r-broomextra >=0.0.5
     - r-crayon >=1.3.4
-    - r-dplyr >=0.8.1
+    - r-dplyr >=0.8.3
     - r-glue >=1.3.1
     - r-lme4 >=1.1_21
     - r-magrittr >=1.5
     - r-purrr >=0.3.2
-    - r-rlang >=0.3.4
-    - r-robust >=0.4_18
+    - r-rlang >=0.4.0
+    - r-robust >=0.4_18.1
     - r-rstudioapi >=0.9.0
     - r-sjstats >=0.17.5
-    - r-skimr >=1.0.6
-    - r-tibble >=2.1.2
+    - r-skimr >=1.0.7
+    - r-tibble >=2.1.3
     - r-tidyr >=0.8.3
 
 test:
@@ -64,10 +64,12 @@ test:
 about:
   home: https://indrajeetpatil.github.io/groupedstats/, https://github.com/IndrajeetPatil/groupedstats/
   license: GPL-3
-  summary: Collection of functions to run statistical tests across all levels of multiple grouping
-    variables.
+  summary: Collection of functions to run statistical tests across all combinations of multiple
+    grouping variables.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - LICENSE
 
 extra:
   recipe-maintainers:
@@ -77,22 +79,22 @@ extra:
 # Type: Package
 # Package: groupedstats
 # Title: Grouped Statistical Analyses in a Tidy Way
-# Version: 0.0.7
+# Version: 0.0.9
 # Authors@R:  person(given = "Indrajeet", family = "Patil", role = c("aut", "cre"), email = "patilindrajeet.science@gmail.com", comment = c(ORCID = "0000-0003-1995-6531"))
 # Maintainer: Indrajeet Patil <patilindrajeet.science@gmail.com>
-# Description: Collection of functions to run statistical tests across all levels of multiple grouping variables.
+# Description: Collection of functions to run statistical tests across all combinations of multiple grouping variables.
 # License: GPL-3 | file LICENSE
 # URL: https://indrajeetpatil.github.io/groupedstats/, https://github.com/IndrajeetPatil/groupedstats/
 # BugReports: https://github.com/IndrajeetPatil/groupedstats/issues/
 # Depends: R (>= 3.5.0)
-# Imports: broomExtra (>= 0.0.3), crayon (>= 1.3.4), dplyr (>= 0.8.1), glue (>= 1.3.1), lme4 (>= 1.1-21), magrittr (>= 1.5), purrr (>= 0.3.2), rlang (>= 0.3.4), robust (>= 0.4-18), rstudioapi (>= 0.9.0), sjstats (>= 0.17.5), skimr (>= 1.0.6), stats, tibble (>= 2.1.2), tidyr (>= 0.8.3), utils
-# Suggests: covr, ez, gapminder, ggplot2, knitr, rmarkdown, spelling, testthat
+# Imports: broomExtra (>= 0.0.5), crayon (>= 1.3.4), dplyr (>= 0.8.3), glue (>= 1.3.1), lme4 (>= 1.1-21), magrittr (>= 1.5), purrr (>= 0.3.2), rlang (>= 0.4.0), robust (>= 0.4-18.1), rstudioapi (>= 0.9.0), sjstats (>= 0.17.5), skimr (>= 1.0.7), stats, tibble (>= 2.1.3), tidyr (>= 0.8.3), utils
+# Suggests: ez, gapminder, ggplot2, knitr, rmarkdown, spelling, testthat
 # Encoding: UTF-8
 # Language: en-US
 # LazyData: true
-# RoxygenNote: 6.1.1
+# RoxygenNote: 6.1.1.9000
 # NeedsCompilation: no
-# Packaged: 2019-06-05 15:16:19 UTC; inp099
+# Packaged: 2019-08-28 12:35:29 UTC; inp099
 # Author: Indrajeet Patil [aut, cre] (<https://orcid.org/0000-0003-1995-6531>)
 # Repository: CRAN
-# Date/Publication: 2019-06-05 15:30:09 UTC
+# Date/Publication: 2019-08-28 13:30:02 UTC
