@@ -7,7 +7,7 @@ Package license: GPL-3
 
 Feedstock license: BSD 3-Clause
 
-Summary: Collection of functions to run statistical tests across all levels of multiple grouping variables.
+Summary: Collection of functions to run statistical tests across all combinations of multiple grouping variables.
 
 
 
