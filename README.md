@@ -1,11 +1,11 @@
-About r-groupedstats
-====================
+About r-groupedstats-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-groupedstats-feedstock/blob/main/LICENSE.txt)
 
 Home: https://indrajeetpatil.github.io/groupedstats/, https://github.com/IndrajeetPatil/groupedstats/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-groupedstats-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of functions to run statistical tests across all combinations of multiple grouping variables.
 
